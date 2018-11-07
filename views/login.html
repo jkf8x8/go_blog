@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{.}}</title>
+    <style>
+        html,body,ul{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style:none;
+        }
+    </style>
+</head>
+
+<body>
+    {{template "navbar"}}
+
+    <h2>content</h2>
+    <div class="content">
+        <form action="/login" method="post">
+            <input type="text" name="uname">
+            <input type="text" name="pwd">
+            <button>登陆</button>
+        </form>
+    </div>
+
+    {{template "footer.html"}}
+</body>
+
+</html>

@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-	"go_blog/controllers"
+	// "go_blog/controllers"
+	"go_blog/routers"
 )
 
 func main(){
 
-	ctl.Run()
+	route.Run()
 	fmt.Println("ok")
 
 }
